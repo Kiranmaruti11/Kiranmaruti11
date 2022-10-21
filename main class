@@ -1,0 +1,26 @@
+import calculator.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        calculation obj = new calculation();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the two number to add:");
+        int a=sc.nextInt();
+        int b= sc.nextInt();
+        int c=obj.adder(a,b);
+        System.out.println("the sum of two numbers are: "+c);
+        a= sc.nextInt();
+        b=sc.nextInt();
+        int d=obj.subtract( a ,b);
+        a= sc.nextInt();
+        b= sc.nextInt();
+        int j=obj.division(a,b);
+        a= sc.nextInt();
+        b= sc.nextInt();
+        int h=obj.multiplication (a,b);
+        System.out.println(c+" "+d+" "+j+" "+h);
+
+    }
+}
