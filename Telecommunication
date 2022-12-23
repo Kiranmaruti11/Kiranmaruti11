@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Arjun {
+
+    public static void main(String[]  args) {
+        char  an;
+        int bn;
+        Scanner  sc=new Scanner(System.in);
+        System.out.println("Welcome to Powered Air service. What would you like to do?");
+        an=sc.next().charAt(0);
+        if(an=='a') {
+            System.out.println("Know My balance.");
+        }
+        else if(an=='b') {
+            System.out.println("Know My Validity Date");
+        }
+        else if(an=='c') {
+            System.out.println("Know number of free calls available");
+        }
+        else if(an=='d') {
+            System.out.println("More");
+            bn=sc.nextInt();
+            switch(bn) {
+                case 1:
+                    System.out.println("Prepaid Bill Request");
+                    break;
+                case 2:
+                    System.out.println("Customer Preferences");
+                    break;
+                case 3:
+                    System.out.println("GPRS activation");
+                    break;
+                case 4:
+                    System.out.println("Special Message Offers");
+                    break;
+                case 5:
+                    System.out.println("Special GPRS Offers");
+                    break;
+                case 6:
+                    System.out.println("3G Activation");
+                    break;
+                case 7:
+                    System.out.println("Go back to Previous menu");
+                    break;
+
+            }
+
+        }
+    }
+}
+
